@@ -1,1 +1,1 @@
-# Barantsev_training
+# Repository for Python training
