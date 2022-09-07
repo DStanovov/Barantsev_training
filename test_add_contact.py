@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest
+from Contact_group import Contact
 
 class TestAddContact(unittest.TestCase):
     def setUp(self):
@@ -18,10 +19,10 @@ class TestAddContact(unittest.TestCase):
         self.open_homepage(wd)
         self.login(wd, username="admin", password="secret")
         self.init_contact_creation(wd)
-        self.fill_contact_firm(wd, firstname="asdasd", middlename="asdasd", lastname="asdasd", nickname="asdasdas", title="asdasda", company="asdasdasd", address="asdasdasd",
+        self.fill_contact_firm(wd, Contact(firstname="asdasd", middlename="asdasd", lastname="asdasd", nickname="asdasdas", title="asdasda", company="asdasdasd", address="asdasdasd",
                                home_phone="777777777", mobile_phone="888888888", work_phone="999999999", fax="000000000",email="qweqwe@sdfsdf.sdac",
                                email2="asdsda@efsdsf.sdfsdf", email3="sdfsdf32@dfsdf.2ewew", homepage="fdsdfsdfsdf.rege", birthday="bday", birth_month="January",
-                               birth_year="1999", anny_day="1", anny_month="February", anny_year="2000", extra_address="gfdhfghfghfghfgh", extra_phone="111111111", note="dfghdfghdfgh")
+                               birth_year="1999", anny_day="1", anny_month="February", anny_year="2000", extra_address="gfdhfghfghfghfgh", extra_phone="111111111", note="dfghdfghdfgh"))
         self.submit_contact_creation(wd)
         self.return_to_homepage(wd)
         self.logout(wd)
