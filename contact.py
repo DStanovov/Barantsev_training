@@ -1,4 +1,4 @@
-
+__author__ = 'dstanovov'
 
 
 class Contact:
