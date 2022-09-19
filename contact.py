@@ -1,7 +1,7 @@
 __author__ = 'dstanovov'
 
 
-class Contact:
+class сontact:
 
     def __init__(self, firstname, middlename, lastname, nickname, title, company, address, home, mobile,work, fax, email, email2, email3, homepage, bday, bmonth, byear, annday, annmonth, annyear,extra_address, extra_phone, notes):
 
