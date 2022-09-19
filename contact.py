@@ -3,7 +3,7 @@ __author__ = 'dstanovov'
 
 class сontact:
 
-    def __init__(self, firstname, middlename, lastname, nickname, title, company, address, home, mobile,work, fax, email, email2, email3, homepage, bday, bmonth, byear, annday, annmonth, annyear,extra_address, extra_phone, notes):
+    def __init__(self, firstname, middlename, lastname, nickname, title, company, address, homephone, mobilephone,workphone, fax, email, email2, email3, homepage, bday, bmonth, byear, annday, annmonth, annyear,extra_address, extra_phone, notes):
 
 
         self.firstname = firstname
@@ -13,9 +13,9 @@ class сontact:
         self.title = title
         self.company = company
         self.address = address
-        self.home = home
-        self.mobile = mobile
-        self.work = work
+        self.homephone = homephone
+        self.mobilephone = mobilephone
+        self.workphone = workphone
         self.fax = fax
         self.email = email
         self.email2 = email2

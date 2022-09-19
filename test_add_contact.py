@@ -19,7 +19,7 @@ class TestAddContact(unittest.TestCase):
         self.login(wd, username="admin", password="secret")
         self.open_add_contact(wd)
         self.fill_contact_firms(wd, сontact(firstname="asdasd", middlename="asdasd", lastname="asdasd", nickname="asdasdas", title="asdasda", company="asdasdasd", address="asdasdasd",
-                                home="777777777", mobile="888888888", work="999999999", fax="000000000", email="qweqwe@sdfsdf.sdac",
+                                homephone="777777777", mobilephone="888888888", workphone="999999999", fax="000000000", email="qweqwe@sdfsdf.sdac",
                                 email2="asdsda@efsdsf.sdfsdf", email3="sdfsdf32@dfsdf.2ewew", homepage="fdsdfsdfsdf.rege", bday="5", bmonth="March",
                                 byear="1989", annday="20", annmonth="June", annyear="2005", extra_address="gfdhfghfghfghfgh", extra_phone="fghfghdghdfgh", notes="dfghdfghdfgh"))
         self.return_to_homepage(wd)
@@ -55,13 +55,13 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("address").send_keys(сontact.address)
         wd.find_element_by_name("home").click()
         wd.find_element_by_name("home").clear()
-        wd.find_element_by_name("home").send_keys(сontact.home)
+        wd.find_element_by_name("home").send_keys(сontact.homephone)
         wd.find_element_by_name("mobile").click()
         wd.find_element_by_name("mobile").clear()
-        wd.find_element_by_name("mobile").send_keys(сontact.mobile)
+        wd.find_element_by_name("mobile").send_keys(сontact.mobilephone)
         wd.find_element_by_name("work").click()
         wd.find_element_by_name("work").clear()
-        wd.find_element_by_name("work").send_keys(сontact.work)
+        wd.find_element_by_name("work").send_keys(сontact.workphone)
         wd.find_element_by_name("fax").click()
         wd.find_element_by_name("fax").clear()
         wd.find_element_by_name("fax").send_keys(сontact.fax)
